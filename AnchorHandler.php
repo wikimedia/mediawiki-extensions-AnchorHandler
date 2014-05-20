@@ -28,7 +28,8 @@ $wgExtensionCredits['parserhook'][] = array(
         'descriptionmsg' => 'anchorhandler-desc',
 );
 
-$wgExtensionMessagesFiles[ 'AnchorHandler' ] = __DIR__ . '/AnchorHandler.i18n.php';
+$wgExtensionMessagesFiles['AnchorHandler'] = __DIR__ . '/AnchorHandler.i18n.php';
+$wgMessageDirs['AnchorHandler'] = __DIR__ . '/i18n';
 
 $egAnchorNamespaces = array();
 
