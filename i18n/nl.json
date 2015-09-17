@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
-			"McDutchie"
+			"McDutchie",
+			"Siebrand"
 		]
 	},
-	"anchorhandler-desc": "Hiermee kun je <nowiki><</nowiki>a>-anker-tags in de wikitekst plaatsen"
+	"anchorhandler-desc": "Maakt het toevoegen mogelijk van <nowiki><</nowiki>a> ankertags in wikitekst"
 }
