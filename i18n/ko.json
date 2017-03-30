@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hwangjy9"
+			"Hwangjy9",
+			"아라"
 		]
 	},
-	"anchorhandler-desc": "<nowiki><</nowiki>a> 앵커 태그를 위키텍스트로 삽입할 수 있도록 허용합니다"
+	"anchorhandler-desc": "<nowiki><</nowiki>a> 앵커 태그를 위키텍스트 안으로 삽입할 수 있게 합니다"
 }
