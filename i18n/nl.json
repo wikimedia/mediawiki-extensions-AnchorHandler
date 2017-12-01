@@ -3,8 +3,9 @@
 		"authors": [
 			"Esketti",
 			"McDutchie",
-			"Siebrand"
+			"Siebrand",
+			"Mar(c)"
 		]
 	},
-	"anchorhandler-desc": "Maakt het toevoegen mogelijk van <nowiki><</nowiki>a> ankerlabels in wikitekst"
+	"anchorhandler-desc": "Maakt het invoegen van <nowiki><</nowiki>a> ankerelementen in wikitekst mogelijk"
 }
