@@ -21,68 +21,17 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- *
- * @ingroup Extensions
- * @author Ike Hecht
- * @version 0.1
- * @link https://www.mediawiki.org/wiki/Extension:AnchorHandler Documentation
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo ( "This is an extension to the MediaWiki package and cannot be run standalone.\n" );
-	die( -1 );
-}
-
-/**
- * Extension credits that will show up on Special:Version
- */
-$wgExtensionCredits['parserhook'][] = [
-	'path' => __FILE__,
-	'name' => 'AnchorHandler',
-	'version' => '0.2',
-	'author' => 'Ike Hecht for [http://www.wikiworks.com/ WikiWorks]',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:AnchorHandler',
-	'descriptionmsg' => 'anchorhandler-desc',
-];
-
-$wgMessagesDirs['AnchorHandler'] = __DIR__ . '/i18n';
-
-$egAnchorNamespaces = [];
-
-$wgHooks['ParserFirstCallInit'][] = 'addAnchorHandler';
-
-/**
- * AddAnchorHandler
- * @param mixed &$parser parser
- * @return mixed
- */
-function addAnchorHandler( Parser &$parser ) {
-	$parser->setHook( 'a', 'anchorHandler' );
-
-	return true;
-}
-
-/**
- * If current namespace is an "anchor namespace" specified in $wgAnchorNamespaces then send out real
- * HTML. Otherwise, just send out the escaped anchor text.
- * @param mixed $text text
- * @param mixed $args args
- * @param mixed $parser parser
- * @param mixed $frame frame
- * @return mixed
- */
-function anchorHandler( $text, array $args, Parser $parser, PPFrame $frame ) {
-	global $egAnchorNamespaces;
-
-	$namespace = $frame->getTitle()->getNamespace();
-
-	if ( !in_array( $namespace, $egAnchorNamespaces ) ) {
-		return htmlspecialchars( $text );
-	}
-
-	$href = $args['href'];
-	$output = Linker::makeExternalLink( $href, $text, false, '', $args );
-	unset( $args['href'] );
-
-	return $output;
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'AnchorHandler' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['AnchorHandler'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for the AnchorHandler extension. ' .
+		'Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the AnchorHandler extension requires MediaWiki 1.29+' );
 }

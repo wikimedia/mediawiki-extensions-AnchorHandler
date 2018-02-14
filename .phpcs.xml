@@ -5,6 +5,8 @@
 		<exclude name="MediaWiki.Files.ClassMatchesFilename.NotMatch" />
 		<exclude name="MediaWiki.NamingConventions.PrefixedGlobalFunctions.wfPrefix" />
 		<exclude name="MediaWiki.NamingConventions.ValidGlobalName.wgPrefix" />
+		<exclude name="Squiz.Scope.MethodScope.Missing" />
+		<exclude name="Generic.Files.LineLength.TooLong" />
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php,php5,inc"/>
