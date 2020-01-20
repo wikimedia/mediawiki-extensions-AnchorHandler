@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"Elisa3626"
 		]
 	},
-	"anchorhandler-desc": "Bağlantı etiketlerini wiki metin içine <nowiki><</nowiki>a> bağlantı etiketleri eklemenize izin verir"
+	"anchorhandler-desc": "Bağlantı etiketlerini vikimetin içine <nowiki><</nowiki>a> bağlantı etiketleri eklemenize izin verir"
 }
