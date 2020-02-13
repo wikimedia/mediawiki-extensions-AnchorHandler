@@ -32,8 +32,8 @@ class AnchorHandlerHooks {
 	}
 
 	/**
-	 * If current namespace is an "anchor namespace" specified in $wgAnchorNamespaces then send out real
-	 * HTML. Otherwise, just send out the escaped anchor text.
+	 * If current namespace is an "anchor namespace" specified in $wgAnchorNamespaces
+	 * then send out real HTML. Otherwise, just send out the escaped anchor text.
 	 * @param mixed $text text
 	 * @param mixed $args args
 	 * @param mixed $parser parser
