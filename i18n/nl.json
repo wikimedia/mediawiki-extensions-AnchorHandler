@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
+			"Mar(c)",
 			"McDutchie",
-			"Siebrand",
-			"Mar(c)"
+			"Siebrand"
 		]
 	},
 	"anchorhandler-desc": "Maakt het invoegen van <nowiki><</nowiki>a> ankerelementen in wikitekst mogelijk"
