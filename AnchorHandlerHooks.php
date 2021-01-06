@@ -22,25 +22,22 @@
 class AnchorHandlerHooks {
 	/**
 	 * AddAnchorHandler
-	 * @param mixed &$parser parser
-	 * @return mixed
+	 * @param Parser $parser
 	 */
-	static function addAnchorHandler( Parser &$parser ) {
+	public static function addAnchorHandler( Parser $parser ) {
 		$parser->setHook( 'a', 'AnchorHandlerHooks::anchorHandler' );
-
-		return true;
 	}
 
 	/**
 	 * If current namespace is an "anchor namespace" specified in $wgAnchorNamespaces
 	 * then send out real HTML. Otherwise, just send out the escaped anchor text.
-	 * @param mixed $text text
-	 * @param mixed $args args
-	 * @param mixed $parser parser
-	 * @param mixed $frame frame
-	 * @return mixed
+	 * @param string $text
+	 * @param array $args
+	 * @param Parser $parser
+	 * @param PPFrame $frame
+	 * @return string
 	 */
-	static function anchorHandler( $text, array $args, Parser $parser, PPFrame $frame ) {
+	public static function anchorHandler( $text, array $args, Parser $parser, PPFrame $frame ) {
 		global $egAnchorNamespaces;
 
 		$namespace = $frame->getTitle()->getNamespace();
