@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата"
+			"Ата",
+			"DDPAT"
 		]
 	},
-	"anchorhandler-desc": "Дозволяє вставляти теґи-якорі <nowiki><</nowiki>a> у вікітекст"
+	"anchorhandler-desc": "Дозволяє вставляти теги-якорі <nowiki><</nowiki>a> у вікітекст"
 }
