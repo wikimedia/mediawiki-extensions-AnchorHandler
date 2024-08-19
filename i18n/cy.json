@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Afalau"
+			"Afalau",
+			"Ceirios"
 		]
 	},
 	"anchorhandler-desc": "Mae hwn yn caniatáu mewnosod tagiau angor <nowiki><</nowiki>a> i wikitext"
