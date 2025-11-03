@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\Linker\Linker;
+
 /**
  * Class file for AnchorHandler.
  *
