@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Arifin.wijaya"
+			"Arifin.wijaya",
+			"Penyuwangi"
 		]
 	},
-	"anchorhandler-desc": "Memungkinkan memasukkan <nowiki><</nowiki>a> tag jangkar ke tekswiki"
+	"anchorhandler-desc": "Memungkinkan memasukkan <nowiki><</nowiki>a> tanda jangkar ke teks wiki"
 }
