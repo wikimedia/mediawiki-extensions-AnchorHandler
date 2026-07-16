@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"PanWor",
 			"Vengir"
 		]
 	},
-	"anchorhandler-desc": "Pozwala na umieszczanie tagów <nowiki><</nowiki>a> w wikitekście"
+	"anchorhandler-desc": "Pozwala na umieszczanie tagów <nowiki><</nowiki>a> w wikikodzie"
 }
